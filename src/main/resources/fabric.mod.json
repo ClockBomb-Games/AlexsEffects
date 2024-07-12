@@ -3,32 +3,23 @@
 	"id": "skunks-tweaks",
 	"version": "${version}",
 	"name": "Skunk's Tweaks",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A small collection of simple client tweaks for Minecraft.",
 	"authors": [
-		"Me!"
+		"RobotoSkunk"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://robotoskunk.com/",
+		"sources": "https://github.com/RobotoSkunk/SkunksTweaks"
 	},
-	"license": "CC0-1.0",
+	"license": "GNU GPLv3",
 	"icon": "assets/skunks-tweaks/icon.png",
 	"environment": "*",
 	"entrypoints": {
-		"main": [
-			"com.robotoskunk.skunks_tweaks.SkunksTweaks"
-		],
 		"client": [
 			"com.robotoskunk.skunks_tweaks.SkunksTweaksClient"
 		]
 	},
-	"mixins": [
-		"skunks-tweaks.mixins.json",
-		{
-			"config": "skunks-tweaks.client.mixins.json",
-			"environment": "client"
-		}
-	],
+	"mixins": [ ],
 	"depends": {
 		"fabricloader": ">=0.15.11",
 		"minecraft": "~1.21",
